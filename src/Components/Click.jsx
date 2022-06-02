@@ -17,7 +17,6 @@ export class Click extends Component {
     render() {
         /**
          * const count = this.state.count
-         * 
          */
         const { count } = this.state;
 
