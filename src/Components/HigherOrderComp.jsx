@@ -1,8 +1,8 @@
 // Higher Order Component Example
-import React from 'react'
+import { Component } from 'react'
 
-const updatedComp = OriginalComp => {
-    class NewComp extends React.Component {
+const updatedComp = (OriginalComp) => {
+    class NewComp extends Component {
         render() {
             return (
                 <OriginalComp name="The user" />

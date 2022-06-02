@@ -1,6 +1,6 @@
-import React from "react";
+import { Component } from "react";
 
-class ClassComp extends React.Component {
+class ClassComp extends Component {
     render() {
         return (
             <div>
@@ -15,7 +15,7 @@ class ClassComp extends React.Component {
     }
 }
 
-export class ClassComp2 extends React.Component {
+export class ClassComp2 extends Component {
     render() {
         return (
             <div>
