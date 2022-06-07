@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import updatedComp from './HigherOrderComp'
 
-export class Hower extends Component {
+class Hower extends Component {
     constructor(props) {
       super(props)
     

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import updatedComp from './HigherOrderComp'
 
-export class Click extends Component {
+class Click extends Component {
     constructor(props) {
       super(props)
     
