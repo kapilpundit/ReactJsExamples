@@ -1,22 +1,33 @@
 // import logo from './logo.svg';
 import './App.css';
-import FunctionalComp from './Components/FunctionalComp';
-import ClassComp, { ClassComp2 } from './Components/ClassComp';
-import Click from './Components/Click';
-import Hower from './Components/Hower';
-import ParentComp from './Components/ParentComp';
+// import FunctionalComp from './Components/FunctionalComp';
+// import ClassComp, { ClassComp2 } from './Components/ClassComp';
+// import Click from './Components/Click';
+// import Hower from './Components/Hower';
+// import ParentComp from './Components/ParentComp';
+import ClassProps from './Components/ClassProps';
+import FunctionalProps from './Components/FunctionalProps';
 
 function App() {
   return (
     <div>
       <h1>Hello World! Welcome to React JS.</h1>
       <h2>The following are two different type of Components in React - </h2>
-      <FunctionalComp />
+      {/* <FunctionalComp />
       <ClassComp />
-      <ClassComp2 />
-      <Click />
+      <ClassComp2 /> */}
+      {/* <Click />
       <Hower />
-      <ParentComp />
+      <ParentComp /> */}
+
+      <ClassProps name="User 1" place="Web">
+        This will be rendered inside the ClassProp component using <code>this.props.children</code>
+      </ClassProps>
+      <ClassProps name="User 2" />
+      <ClassProps name="User 3">
+        This button is rendered using <code>this.props.children</code> inside ClassProps <button>Click</button>
+      </ClassProps>
+      <FunctionalProps name="User 4" place="API" />
     </div>
   );
 }
