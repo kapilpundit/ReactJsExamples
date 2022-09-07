@@ -8,7 +8,8 @@ import './App.css';
 // import ParentComp from './Components/ParentComp';
 // import ClassProps from './Components/ClassProps';
 // import FunctionalProps from './Components/FunctionalProps';
-import StateExampleComp from './Components/StateExampleComp';
+// import StateExampleComp from './Components/StateExampleComp';
+import EventsExampleComp from './Components/EventsExampleComp'
 
 class App extends Component {
   styles = {
@@ -39,7 +40,9 @@ class App extends Component {
         </ClassProps>
         <FunctionalProps name="User 4" place="API" /> */}
 
-        <StateExampleComp />
+        {/* <StateExampleComp /> */}
+
+        <EventsExampleComp />
       </div>
     );
   }

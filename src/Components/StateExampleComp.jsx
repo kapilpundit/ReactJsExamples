@@ -7,6 +7,7 @@ class StateExampleComp extends Component {
         super(props)
 
         this.state = {
+            subscriptionStatus: false,
             message: "Subscribe to our channel",
             subscribeButtonText: "Subscribe",
             notifications: false
@@ -21,10 +22,21 @@ class StateExampleComp extends Component {
     };
 
     subscribe = () => {
-        this.setState({ 
-            message: "Hit the bell icon to never miss an update!",
-            subscribeButtonText: "Subscribed"
-         });
+        if (!this.state.subscriptionStatus) {
+            this.setState({ 
+                subscriptionStatus: true,
+                message: "Subscribe to our channel",
+                subscribeButtonText: "Subscribe",
+                notifications: false
+             });
+        } else {
+            this.setState({
+                subscriptionStatus: false,
+                message: "Thanks for subscribing to our channel! Click on the notifications bell to get notifications",
+                subscribeButtonText: "Subscribed",
+                notifications: false
+            });
+        }
     };
 
     setNotifications = () => {
